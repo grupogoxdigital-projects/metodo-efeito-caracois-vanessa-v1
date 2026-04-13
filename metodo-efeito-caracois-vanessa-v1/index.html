@@ -78,23 +78,15 @@
 
     .bar-track {
       display: inline-flex;
-      animation: ticker 25s linear infinite;
       white-space: nowrap;
+      will-change: transform;
     }
 
     .bar-track span {
       margin: 0 40px;
     }
 
-    @keyframes ticker {
-      0% {
-        transform: translateX(0);
-      }
 
-      100% {
-        transform: translateX(-50%);
-      }
-    }
 
     .hero {
       display: grid;
@@ -725,6 +717,25 @@
       document.addEventListener('visibilitychange', () => {
         if (!document.hidden && !rafId) rafId = requestAnimationFrame(animate);
       });
+    })();
+
+    // Ticker animation (JS for speed consistency)
+    (function() {
+      const track = document.querySelector('.bar-track');
+      if (!track) return;
+      let pos = 0;
+      const speed = 0.8; // Pixels per frame (adjust for speed)
+      
+      function update() {
+        pos -= speed;
+        // Since we have 4 copies, half the width is a safe loop point
+        if (pos <= -track.offsetWidth / 2) {
+          pos = 0;
+        }
+        track.style.transform = `translate3d(${pos}px, 0, 0)`;
+        requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
     })();
   </script>
 </body>

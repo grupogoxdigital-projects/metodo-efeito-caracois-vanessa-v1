@@ -44,14 +44,11 @@
   }
   .bar-track {
     display: inline-flex;
-    animation: ticker 40s linear infinite;
     white-space: nowrap;
+    will-change: transform;
   }
   .bar-track span { margin: 0 40px; }
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+
 
   /* ─── HERO ─── */
   .hero {
