@@ -1,0 +1,15 @@
+# Local Netlify folder
+.netlify
+
+# Ignore root assets to avoid mixing projects
+/index.html
+/style.css
+/script.js
+/index-modelo.html
+/images/
+/copy.txt
+
+# Keep the specific project
+!/metodo-efeito-caracois-vanessa-v1/
+!/netlify.toml
+!/.gitignore
