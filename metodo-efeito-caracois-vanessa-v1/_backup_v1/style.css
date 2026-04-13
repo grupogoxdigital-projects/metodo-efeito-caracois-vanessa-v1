@@ -477,183 +477,37 @@
   }
   .pricing .section-title { text-align: center; }
 
-  /* ─── VALUE COMPARISON BLOCK ─── */
-  .value-comparison {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 0;
-    max-width: 860px;
-    margin: 56px auto 0;
-    border: 1px solid rgba(201,168,76,0.15);
-    overflow: hidden;
-  }
-  .value-side {
-    padding: 40px 36px;
+  .pricing-tabs {
     display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .value-individual {
-    background: linear-gradient(135deg, rgba(220,38,38,0.06) 0%, rgba(220,38,38,0.02) 100%);
-    border-right: 1px solid rgba(220,38,38,0.18);
-  }
-  .value-complete {
-    background: linear-gradient(135deg, rgba(34,197,94,0.07) 0%, rgba(34,197,94,0.02) 100%);
-    border-left: 1px solid rgba(34,197,94,0.2);
-    position: relative;
-  }
-  .value-complete::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--green), transparent);
-  }
-  .value-label {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 24px;
-    display: block;
-  }
-  .value-label-red { color: rgba(248,113,113,0.9); }
-  .value-label-green { color: var(--green); }
-  .value-individual .value-label { color: rgba(248,113,113,0.9); }
-  .value-complete .value-label { color: var(--green); }
-
-  .value-courses-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    flex: 1;
-  }
-  .value-course-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(201,168,76,0.07);
-    font-size: 14px;
-    color: var(--text-muted);
-  }
-  .value-course-item:last-child { border-bottom: none; }
-  .value-check {
-    color: var(--gold);
-    font-size: 11px;
-  }
-  .value-course-check { color: var(--text); }
-
-  .value-total-individual {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(220,38,38,0.2);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--text-muted);
-  }
-  .value-total-price-crossed {
-    font-family: var(--serif);
-    font-size: 22px;
-    font-weight: 700;
-    color: rgba(248,113,113,0.75);
-    text-decoration: line-through;
-    opacity: 0.8;
-  }
-
-  .value-total-complete {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(34,197,94,0.2);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--text);
-  }
-  /* Sub-bloco: valor de referência riscado em vermelho */
-  .value-total-price-ref {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0.85;
-  }
-  .value-total-ref-label {
-    font-size: 12px;
-    font-weight: 600;
-    color: rgba(248,113,113,0.8);
-    letter-spacing: 0.5px;
-  }
-  .value-total-ref-price {
-    font-family: var(--serif);
-    font-size: 18px;
-    font-weight: 700;
-    color: rgba(248,113,113,0.8);
-    text-decoration: line-through;
-  }
-  /* Sub-bloco: valor principal em verde */
-  .value-total-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .value-total-price-complete {
-    font-family: var(--serif);
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--green);
-  }
-
-  .value-economy-pill {
-    display: inline-block;
-    background: rgba(34,197,94,0.12);
-    border: 1px solid rgba(34,197,94,0.3);
-    color: var(--green);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    margin-top: 16px;
-    text-align: center;
-  }
-
-  /* Item Bonus no bloco verde */
-  .value-course-bonus {
-    margin-top: 6px;
-    border-top: 1px dashed rgba(34,197,94,0.2) !important;
-    padding-top: 10px !important;
-    font-weight: 600;
-    color: var(--green-light) !important;
-  }
-  .value-course-bonus .value-check { color: var(--green); }
-
-  .value-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 0 20px;
-    background: var(--dark-4);
-    min-width: 56px;
+    gap: 0;
+    margin: 30px auto 0;
+    max-width: 440px;
+    border: 1px solid rgba(201,168,76,0.2);
   }
-  .value-arrow-line {
+  .tab-btn {
     flex: 1;
-    width: 1px;
-    background: rgba(201,168,76,0.15);
-  }
-  .value-arrow-label {
-    font-family: var(--serif);
-    font-size: 14px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--sans);
+    font-size: 13px;
     font-weight: 700;
-    color: var(--gold);
     letter-spacing: 2px;
-    padding: 14px 0;
+    text-transform: uppercase;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-right: 1px solid rgba(201,168,76,0.2);
   }
+  .tab-btn:last-child { border-right: none; }
+  .tab-btn.active {
+    background: var(--gold);
+    color: var(--dark);
+  }
+
+  .pricing-panel { display: none; }
+  .pricing-panel.active { display: block; }
 
   .main-offer {
     max-width: 680px;
@@ -754,46 +608,7 @@
     margin-bottom: 24px;
   }
 
-  /* BONUS BLOCK no card do metodo completo */
-  .offer-bonus-block {
-    border: 1px solid rgba(34,197,94,0.25);
-    border-radius: 0;
-    background: rgba(34,197,94,0.04);
-    padding: 20px 24px 16px;
-    margin: 4px 0 8px;
-    position: relative;
-  }
-  .offer-bonus-block::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--green), transparent);
-  }
-  .offer-bonus-label {
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 3.5px;
-    text-transform: uppercase;
-    color: var(--green);
-    margin-bottom: 12px;
-    display: block;
-    text-align: center;
-  }
-  .offer-items-bonus {
-    margin-bottom: 0 !important;
-  }
-  .offer-items-bonus li {
-    color: var(--text) !important;
-    border-bottom-color: rgba(34,197,94,0.08) !important;
-  }
-  .offer-items-bonus li::before {
-    content: '✦' !important;
-    color: var(--green) !important;
-  }
-  .offer-items-bonus li strong { color: var(--green-light) !important; }
-
-
+  /* INDIVIDUAL CARDS */
   .individual-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -834,35 +649,10 @@
   }
   .ind-card-price {
     font-family: var(--serif);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  .ind-card-price strong {
-    color: var(--gold);
-    font-family: var(--serif);
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 700;
-    display: block;
-    margin-top: 4px;
-  }
-  .ind-price-installments {
-    display: block;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    opacity: 0.7;
-    margin-bottom: 2px;
-  }
-  .offer-price-prefix {
-    font-size: 22px;
-    vertical-align: middle;
-    opacity: 0.8;
-    font-weight: 400;
-    font-family: var(--sans);
+    color: var(--gold);
+    margin-bottom: 20px;
   }
 
   /* ─── ABOUT ─── */
@@ -1007,28 +797,14 @@
     .deco-circles { display: none; }
 
     /* PRICING COMPACT MOBILE */
+    .pricing-tabs { flex-direction: column; width: 100%; margin-top: 30px; }
+    .tab-btn { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); }
+    .tab-btn:last-child { border-bottom: none; }
+    
     .individual-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 30px; }
     .ind-card { padding: 24px 20px; text-align: center; }
     .ind-card-desc { font-size: 14px; margin-bottom: 16px; }
-    .ind-card-price { margin-bottom: 12px; }
-
-    /* VALUE COMPARISON MOBILE */
-    .value-comparison {
-      grid-template-columns: 1fr;
-      margin-top: 30px;
-    }
-    .value-arrow {
-      flex-direction: row;
-      padding: 16px 20px;
-      min-width: auto;
-    }
-    .value-arrow-line {
-      flex: 1;
-      width: auto;
-      height: 1px;
-    }
-    .value-complete { border-left: none; border-top: 1px solid rgba(201,168,76,0.2); }
-    .value-complete::before { display: none; }
+    .ind-card-price { margin-bottom: 12px; font-size: 28px; }
 
     .main-offer { padding: 36px 16px 24px; margin-top: 30px; }
     .offer-badge {

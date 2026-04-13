@@ -308,14 +308,14 @@
         Tudo em um único método — completo, vitalício e com aplicação imediata no salão.
       </p>
       <div class="hero-cta-group">
-        <a href="#pricing" class="btn-primary"><span>QUERO O MÉTODO COMPLETO por R$1.497,00</span></a>
+        <a href="#pricing" class="btn-primary"><span>QUERO O MÉTODO COMPLETO por R$997,00</span></a>
         <p class="hero-note">*vagas limitadas</p>
       </div>
     </div>
     <div class="hero-right">
       <div class="hero-img-wrap">
-        <img src="/.netlify/images?url=/images/vanessa-hero-DBy10SN9.webp&w=800&q=80" alt="Vanessa Barreto"
-          loading="eager" fetchpriority="high" width="800" height="800">
+        <img src="/.netlify/images?url=/images/vanessa-hero-DBy10SN9.webp&w=800&q=80" alt="Vanessa Barreto" loading="eager" fetchpriority="high"
+          width="800" height="800">
       </div>
       <svg class="deco-circles" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
         <circle cx="160" cy="160" r="140" stroke-width="1" />
@@ -455,154 +455,85 @@
   <section class="pricing" id="pricing">
     <div class="reveal">
       <span class="section-label" style="text-align:center;display:block;">Investimento</span>
-      <h2 class="section-title">Oferta exclusiva <em>liberada</em></h2>
+      <h2 class="section-title">Escolha como <em>você quer começar.</em></h2>
     </div>
 
-    <!-- CARD DO METODO COMPLETO — logo abaixo do titulo -->
-    <div class="main-offer reveal" style="transition-delay:0.1s">
-      <span class="offer-badge">Recomendado — Melhor custo-benefício</span>
-      <h3 class="offer-title">Método Efeito Caracóis Completo</h3>
-      <p class="offer-subtitle">Os 3 protocolos + Marketing · Acesso Vitalício</p>
-      <ul class="offer-items">
-        <li><strong>Permanente Afro</strong> protocolo completo</li>
-        <li><strong>Desprogressiva</strong> transição capilar segura</li>
-        <li><strong>Liso Sem Erro</strong> alisamento sem margem para falhas</li>
-        <li><strong>Marketing para Salão</strong> lote sua agenda</li>
-      </ul>
-      <div class="offer-bonus-block">
-        <div class="offer-bonus-label">Bonus</div>
-        <ul class="offer-items offer-items-bonus">
-          <li><strong>Kit Efeito Caracóis</strong> + frete grátis</li>
-          <li><strong>6 encontros AO VIVO</strong> com a Vanessa Barreto</li>
-          <li><strong>Suporte completo da equipe</strong> durante 1 ano</li>
+    <div class="pricing-tabs reveal" style="transition-delay:0.1s">
+      <button class="tab-btn active" onclick="showTab('complete')">Método Completo</button>
+      <button class="tab-btn" onclick="showTab('individual')">Cursos Individuais</button>
+    </div>
+
+    <!-- COMPLETE -->
+    <div class="pricing-panel active" id="tab-complete">
+      <div class="main-offer reveal">
+        <span class="offer-badge">Recomendado</span>
+        <h3 class="offer-title">Método Efeito Caracóis Completo</h3>
+        <p class="offer-subtitle">Os 3 protocolos + Marketing · Acesso Vitalício</p>
+        <ul class="offer-items">
+          <li><strong>Permanente Afro</strong> protocolo completo</li>
+          <li><strong>Desprogressiva</strong> transição capilar segura</li>
+          <li><strong>Liso Sem Erro</strong> alisamento sem margem para falhas</li>
+          <li><strong>Marketing para Salão</strong> lote sua agenda</li>
         </ul>
-      </div>
-      <div class="offer-divider"></div>
-      <p class="offer-price-label">Você investe somente</p>
-      <div class="offer-price"><span class="offer-price-prefix">12x de</span> R$ 164,08</div>
-      <p class="offer-installment">ou à vista por R$ 1.497,00 · Acesso imediato após confirmação</p>
-      <a href="https://pay.hotmart.com/N88052094D" class="btn-primary"><span>QUERO O MÉTODO COMPLETO</span></a>
-      <p class="hero-note" style="margin-top:16px;">vagas limitadas · oferta por tempo limitado</p>
-    </div>
-    <div><br></div>
-    <div class="reveal">
-      <h2 class="section-title">Os 3 cursos que <em>transformam sua carreira.</em></h2>
-    </div>
-
-    <!-- CURSOS INDIVIDUAIS -->
-    <div class="individual-grid reveal" style="transition-delay:0.2s">
-      <div class="ind-card">
-        <div class="ind-card-num">01</div>
-        <h4 class="ind-card-name">Permanente Afro</h4>
-        <p class="ind-card-desc">Protocolo especializado para cachos definidos e duradouros em cabelos afro. Do
-          diagnóstico ao acabamento.</p>
-        <div class="ind-card-price">
-          <span class="ind-price-installments">12x de R$ 76,39</span>
-          ou à vista por <strong>R$ 697,00</strong>
-        </div>
-        <a href="https://pay.hotmart.com/H98125728N" class="btn-outline">QUERO ESTE CURSO</a>
-      </div>
-      <div class="ind-card">
-        <div class="ind-card-num">02</div>
-        <h4 class="ind-card-name">Desprogressiva</h4>
-        <p class="ind-card-desc">Transição capilar segura para clientes que desejam resgatar seus cachos naturais sem
-          riscos.</p>
-        <div class="ind-card-price">
-          <span class="ind-price-installments">6x de R$ 135,09</span>
-          ou à vista por <strong>R$ 697,00</strong>
-        </div>
-        <a href="https://pay.hotmart.com/T92050041C" class="btn-outline">QUERO ESTE CURSO</a>
-      </div>
-      <div class="ind-card">
-        <div class="ind-card-num">03</div>
-        <h4 class="ind-card-name">Liso Sem Erro</h4>
-        <p class="ind-card-desc">Alisamento com resultado impecável, segurança para o fio e cliente fidelizada.</p>
-        <div class="ind-card-price">
-          <span class="ind-price-installments">12x de R$ 76,39</span>
-          ou à vista por <strong>R$ 697,00</strong>
-        </div>
-        <a href="https://pay.hotmart.com/N99476657H" class="btn-outline">QUERO ESTE CURSO</a>
+        <div class="offer-divider"></div>
+        <p class="offer-price-label">Você investe somente</p>
+        <div class="offer-price" style="font-size: 52px;"><span
+            style="font-size: 22px; vertical-align: middle; opacity: 0.8; font-weight: 400; font-family: var(--sans);">12x
+            de</span> R$ 109,27</div>
+        <p class="offer-installment">ou a vista por R$ 997,00 · Acesso imediato após confirmação</p>
+        <a href="https://pay.hotmart.com/N88052094D" class="btn-primary"><span>QUERO O MÉTODO
+            COMPLETO</span></a>
+        <p class="hero-note" style="margin-top:16px;">vagas limitadas · oferta por tempo limitado</p>
       </div>
     </div>
 
-    <!-- BLOCO DE COMPARACAO DE VALOR -->
-    <div class="value-comparison reveal" style="transition-delay:0.3s">
-      <div class="value-side value-individual">
-        <span class="value-label value-label-red">COMPRANDO SEPARADAMENTE</span>
-        <div class="value-courses-list">
-          <div class="value-course-item">
-            <span>Permanente Afro</span>
-            <span>R$ 697,00</span>
-          </div>
-          <div class="value-course-item">
-            <span>Desprogressiva</span>
-            <span>R$ 697,00</span>
-          </div>
-          <div class="value-course-item">
-            <span>Liso Sem Erro</span>
-            <span>R$ 697,00</span>
-          </div>
-          <div class="value-course-item">
-            <span>Kit Efeito Caracóis + frete</span>
-            <span>R$ 369,97</span>
-          </div>
+    <!-- INDIVIDUAL -->
+    <div class="pricing-panel" id="tab-individual">
+      <div class="individual-grid reveal">
+        <div class="ind-card">
+          <div class="ind-card-num">01</div>
+          <h4 class="ind-card-name">Permanente Afro</h4>
+          <p class="ind-card-desc">Protocolo especializado para cachos definidos e duradouros em cabelos afro. Do
+            diagnóstico ao acabamento.</p>
+          <div class="ind-card-price" style="font-size: 34px;"><span
+              style="font-size: 16px; opacity: 0.7; font-weight: 400; font-family: var(--sans);">12x de</span> R$
+            76,39<br><span style="font-size: 16px; opacity: 0.8; font-weight: 400; display: block; margin-top: 5px;">ou
+              a vista por R$ 697,00</span></div>
+          <a href="https://pay.hotmart.com/H98125728N" class="btn-outline">QUERO ESTE CURSO</a>
         </div>
-        <div class="value-total-individual">
-          <span>Total</span>
-          <span class="value-total-price-crossed">R$ 2.460,97</span>
+        <div class="ind-card">
+          <div class="ind-card-num">02</div>
+          <h4 class="ind-card-name">Desprogressiva</h4>
+          <p class="ind-card-desc">Transição capilar segura para clientes que desejam resgatar seus cachos naturais sem
+            riscos.</p>
+          <div class="ind-card-price" style="font-size: 34px;"><span
+              style="font-size: 16px; opacity: 0.7; font-weight: 400; font-family: var(--sans);">6x de</span> R$
+            135,09<br><span style="font-size: 16px; opacity: 0.8; font-weight: 400; display: block; margin-top: 5px;">ou
+              a vista por R$ 697,00</span></div>
+          <a href="https://pay.hotmart.com/T92050041C" class="btn-outline">QUERO ESTE CURSO</a>
+        </div>
+        <div class="ind-card">
+          <div class="ind-card-num">03</div>
+          <h4 class="ind-card-name">Liso Sem Erro</h4>
+          <p class="ind-card-desc">Alisamento com resultado impecável, segurança para o fio e cliente fidelizada.</p>
+          <div class="ind-card-price" style="font-size: 34px;"><span
+              style="font-size: 16px; opacity: 0.7; font-weight: 400; font-family: var(--sans);">12x de</span> R$
+            76,39<br><span style="font-size: 16px; opacity: 0.8; font-weight: 400; display: block; margin-top: 5px;">ou
+              a vista por R$ 697,00</span></div>
+          <a href="https://pay.hotmart.com/N99476657H" class="btn-outline">QUERO ESTE CURSO</a>
         </div>
       </div>
-
-      <div class="value-arrow">
-        <div class="value-arrow-line"></div>
-        <div class="value-arrow-label">VS</div>
-        <div class="value-arrow-line"></div>
-      </div>
-
-      <div class="value-side value-complete value-complete-green">
-        <span class="value-label value-label-green">Método Completo</span>
-        <div class="value-courses-list">
-          <div class="value-course-item value-course-check">
-            <span>Permanente Afro</span>
-            <span class="value-check">✦</span>
-          </div>
-          <div class="value-course-item value-course-check">
-            <span>Desprogressiva</span>
-            <span class="value-check">✦</span>
-          </div>
-          <div class="value-course-item value-course-check">
-            <span>Liso Sem Erro</span>
-            <span class="value-check">✦</span>
-          </div>
-          <div class="value-course-item value-course-check">
-            <span>Marketing para Salão</span>
-            <span class="value-check">✦</span>
-          </div>
-          <div class="value-course-item value-course-check value-course-bonus">
-            <span>Bonus inclusos</span>
-            <span class="value-check">✦</span>
-          </div>
-        </div>
-        <div class="value-total-complete value-total-complete-green">
-          <div class="value-total-price-ref">
-            <span class="value-total-ref-label">Se comprar separado</span>
-            <span class="value-total-ref-price">R$ 2.460,97</span>
-          </div>
-          <div class="value-total-main">
-            <span>Tudo por apenas</span>
-            <span class="value-total-price-complete value-price-green">R$ 1.497,00</span>
-          </div>
-        </div>
-        <div class="value-economy-pill value-economy-green">Economia de R$ 963,97</div>
-      </div>
+      <p style="text-align:center;margin-top:30px;font-size:13px;color:var(--text-muted);">
+        ✦ &nbsp;Adquirindo o <strong style="color:var(--gold)">Método Completo</strong>, você acessa os 3
+        cursos + Marketing com economia real.
+      </p>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="about">
-    <div class="about-img">
-      <img src="/.netlify/images?url=/images/van2.webp&w=800&q=80" alt="Vanessa Barreto" loading="lazy" width="600"
-        height="900">
+    <div class="about-img reveal">
+      <img src="/.netlify/images?url=/images/van2.webp&w=800&q=80" alt="Vanessa Barreto" loading="lazy" width="600" height="900">
     </div>
     <div class="reveal" style="transition-delay:0.15s">
       <span class="section-label">Quem vai te ensinar</span>
@@ -629,7 +560,7 @@
       acesso antes que as vagas se encerrem.
     </p>
     <br>
-    <a href="#pricing" class="btn-primary" style="margin-top:16px"><span>GARANTIR MINHA VAGA por R$1.497,00</span></a>
+    <a href="#pricing" class="btn-primary" style="margin-top:16px"><span>GARANTIR MINHA VAGA por R$997,00</span></a>
     <div class="trust-row">
       <div class="trust-item">
         <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -677,6 +608,14 @@
     style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
 
   <script>
+    // Tab switching
+    function showTab(tab) {
+      document.querySelectorAll('.pricing-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+
     // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
@@ -781,12 +720,12 @@
     })();
 
     // Ticker animation (JS for speed consistency)
-    (function () {
+    (function() {
       const track = document.querySelector('.bar-track');
       if (!track) return;
       let pos = 0;
       const speed = 0.8; // Pixels per frame (adjust for speed)
-
+      
       function update() {
         pos -= speed;
         // Since we have 4 copies, half the width is a safe loop point
